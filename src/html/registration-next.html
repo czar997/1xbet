@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="registration-next">
+         <form class="registration-next__form" style="background-image: url(/images/registration_back.png);">
+            <div class="registration-next__header">
+               <h1>Продолжить регистрацию</h1>
+            </div>
+            <div class="registration-next__body">
+               <label for="registration-name">Имя</label>
+               <input type="text" id="registration-name">
+               <label for="registration-surname">Фамилия</label>
+               <input type="text" id="registration-surname">
+               <label for="registration-telegram">Telegram</label>
+               <input type="text" id="registration-telegram">
+               <label for="registration-tel">Номер телефона</label>
+               <input type="tel" id="registration-tel">
+               <input type="submit" value="Сохранть">
+            </div>
+         </form>
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

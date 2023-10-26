@@ -1,0 +1,85 @@
+.leagues-slug-container {
+  padding: 150px 15px 80px;
+  @media (max-width: 767px) {
+    padding: 75px 15px 0;
+  }
+}
+.leagues-slug__inner {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+  .prediction__block {
+    background: transparent;
+    h4 {
+      font-size: 20px;
+      text-transform: none;
+    }
+  }
+}
+.leagues-slug__header {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin-bottom: 55px;
+  padding: 22px 25px;
+  @media (max-width: 1200px) {
+    margin-bottom: 25px;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 0;
+  }
+}
+.leagues-slug__header-image {
+  width: 153px;
+  height: 153px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  @media (max-width: 1200px) {
+    width: 133px;
+    height: 133px;
+    img {
+      width: 60%;
+    }
+  }
+  @media (max-width: 575px) {
+    width: 83px;
+    height: 83px;
+  }
+}
+.leagues-slug__header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media (max-width: 767px) {
+    gap: 15px;
+  }
+  h1 {
+    font-family: $font-secondary;
+    font-size: 30px;
+    line-height: normal;
+    @media (max-width: 1200px) {
+      font-size: 27px;
+    }
+    @media (max-width: 575px) {
+      font-size: 18px;
+    }
+  }
+  .news-slug-btn {
+    margin-bottom: 0;
+    @media (max-width: 575px) {
+      padding: 5px;
+      max-width: 180px;
+      font-size: 14px;
+      gap: 10px;
+    }
+  }
+}

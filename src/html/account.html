@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="main__container account-container">
+         <section class="account">
+            <div class="account__wrapper" style="background-image: url(/images/account_back.jpg);">
+               <div class="account__tabs">
+                  <div class="account__tab acctab-active" data-tab="acc-info">
+                     <div class="account__tab-image">
+                        <img src="/images/acc-icon.svg" alt="acc-icon">
+                     </div>
+                     <span>Профиль</span>
+                  </div>
+                  <div class="account__tab " data-tab="acc-partner">
+                     <div class="account__tab-image">
+                        <img src="/images/smile.svg" alt="smile">
+                     </div>
+                     <span>Партнерский тариф</span>
+                  </div>
+                  <div class="account__tab" data-tab="acc-premium">
+                     <div class="account__tab-image">
+                        <img src="/images/crown.svg" alt="crown">
+                     </div>
+                     <span>Премиум тариф</span>
+                  </div>
+               </div>
+               <div class="acc-tabs account__info acc__active" id="acc-info">
+                  <form class="account__form">
+                     <div class="account__photo">
+                        <div class="account__photo-item">
+                           <div class="account__photo-image">
+                              <img src="/images/acc__image.png" alt="фото аккаунта">
+                           </div>
+                           <label class="ava-input"><input type="file" style="display: none;"><img
+                                 src="/images/crayon_Icon.svg" alt="карандаш">Изменить фото</label>
+                        </div>
+                     </div>
+                     <div class="account__data">
+                        <div class="account__data-top">
+                           <div class="data-top_input"><label for="name">Имя</label><input type="text" id="name"></div>
+                           <div class="data-top_input"><label for="surname">Фамилия</label><input type="text"
+                                 id="surname"></div>
+                           <div class="data-top_input"><label for="telegram">Telegram</label><input type="text"
+                                 id="telegram"></div>
+                           <div class="data-top_input"><label for="partner_id">ID партнерки</label><input type="text"
+                                 id="partner_id"></div>
+                           <div class="data-top_input"><label for="tel">Телефон</label><input type="tel" id="tel"></div>
+
+                        </div>
+                        <div class="account__data-bottom">
+                           <div class="data-top_input"><label for="current-pass">Текущий пароль</label>
+                              <div class="eye-input">
+                                 <input type="password" id="current-pass">
+                                 <img src="/images/eye-pass_icon.svg" alt="eye-pass_icon" data-password="current-pass">
+                              </div>
+                           </div>
+                           <div class="data-top_input"><label for="new-pass">Новый пароль</label>
+                              <div class="eye-input">
+                                 <input type="password" id="new-pass">
+                                 <img src="/images/eye-pass_icon.svg" alt="eye-pass_icon" data-password="new-pass">
+                              </div>
+                           </div>
+                           <div class="data-top_input"><label for="repeat-pass">Повторите пароль</label>
+                              <div class="eye-input">
+                                 <input type="password" id="repeat-pass">
+                                 <img src="/images/eye-pass_icon.svg" alt="eye-pass_icon" data-password="repeat-pass">
+                              </div>
+                           </div>
+                           <input type="submit" value="Сохранить">
+                        </div>
+                     </div>
+                  </form>
+                  <button class="delete-acc">
+                     <img src="/images/delete_Icon.svg" alt="delete_Icon">
+                     <span>Удалить аккаунт</span>
+                  </button>
+               </div>
+               <div class="acc-tabs account__partner" id="acc-partner">
+                  <div class="account__partner-connect">
+                     <figure>
+                        <div class="account__partner-image"><img src="/images/account_partner.svg"
+                              alt="account_partner"></div>
+                        <figcaption>ТАРИФ ПАРТНЕРСКИЙ</figcaption>
+                     </figure>
+                     <button class="btn btn__fill account__partner-btn">Подключить</button>
+                  </div>
+                  <div class="account__partner-about" style="background-image: url(/images/our-predictions_back.jpg);">
+                     <span class="about-subtitle">О тарифе</span>
+                     <div class="account__partner-info">
+                        <p>Активен при регистрации в партнерской нашему проекту букмекерской конторе.</p>
+                        <p>С этим тарифом вы получаете доступ к стандартным показателям спортивного матча, рассчитанных
+                           первой ступенью алгоритма (гол, угловой, фол и так далее). </p>
+                        <p>Дополнительная опция для тех, кто хочет ознакомиться с показателями ожидаемых голов и их
+                           тренда. Это показатели, обработанные второй ступенью алгоритма. Благодаря этой функции можно
+                           отслеживать тенденцию показателя голов команды.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="acc-tabs account__premium" id="acc-premium">
+                  <div class="account__premium-connect">
+                     <figure>
+                        <div class="account__premium-image"><img src="/images/account_premium.svg"
+                              alt="account_premium"></div>
+                        <figcaption>
+                           <span>ПРЕМИУМ ТАРИФ</span>
+                           <div class="account__premium-choose">
+                              <label>
+                                 <input type="radio" name="premium__choose" class="real__radio" checked>
+                                 <span class="fake__radio"></span>
+                                 <strong>499 ₽</strong> на один день
+                              </label>
+                              <label>
+                                 <input type="radio" name="premium__choose" class="real__radio">
+                                 <span class="fake__radio"></span>
+                                 <span>
+                                    <strong><del>14 970</del></strong> <strong class="premium-sale">13
+                                       000 ₽</strong> на
+                                    месяц
+                                 </span>
+                              </label>
+                           </div>
+                        </figcaption>
+                     </figure>
+                     <button class="btn btn__fill account__premium-btn">Купить тариф</button>
+                  </div>
+                  <div class="account__premium-about" style="background-image: url(/images/our-predictions_back.jpg);">
+                     <span class="about-subtitle">О тарифе</span>
+                     <div class="account__premium-info">
+                        <div class="account__premium-info_title">
+                           <p>С этим тарифом вы приобретаете:</p>
+                           <ul>
+                              <li>Прогноз с уникальной точностью</li>
+                              <li>Доступ к премиум каналу в <a href="#!">Telegram</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>Предназначен для серьезных ставок на спорт. Приобретая его, пользователь получает доступ к
+                           третьей ступени обработки данных алгоритмом, которая отсеивает более 80% матчей. И лишь в
+                           оставшихся, выдает показатели команд, которые дают небольшой, но стабильный плюс. Подписку
+                           можно оформить на один день или на более продолжительный период – на месяц. Стоимость дневной
+                           подписки 499 рублей. Для того, чтобы увеличить свои шансы на победу, можно приобрести
+                           месячный абонемент за 13 000 рублей.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         @@include('aside.html')
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

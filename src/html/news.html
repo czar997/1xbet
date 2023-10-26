@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="news__container">
+         <section class="news">
+            <nav class="news-nav">
+               <ul class="news-nav__list">
+                  <li><span class="active-item">Новости спорта</span></li>
+                  <li><span>Полезные статьи</span></li>
+               </ul>
+            </nav>
+            <div class="news__content">
+               <a href="" class="news__item" style="background-image: url(/images/news_item1.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+               <a href="" class="news__item" style="background-image: url(/images/news_item2.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+               <a href="" class="news__item" style="background-image: url(/images/news_item3.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+               <a href="" class="news__item" style="background-image: url(/images/news_item4.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+               <a href="" class="news__item" style="background-image: url(/images/news_item5.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+               <a href="" class="news__item" style="background-image: url(/images/news_item6.jpg);">
+                  <div class="news__item-inner">
+                     <p>Матч Фенербахче - Бешикташ 02.04.2023</p>
+                  </div>
+               </a>
+            </div>
+            <div class="news__pagination">
+               <button class="news__pagination-btn"><img src="/images/news-arrow_left.svg"
+                     alt="news-arrow_left"></button>
+               <div class="news__pagination-count">
+                  <span class="pagination-item span-active">1</span>
+                  <span class="pagination-item">2</span>
+                  <span class="pagination-item">3</span>
+                  <span class="pagination-item">4</span>
+                  <span class="pagination-item">5</span>
+                  <span class="pagination-item manydots">...</span>
+                  <span class="pagination-item">65</span>
+               </div>
+               <button class="blog__pagination-btn"><img src="/images/news-arrow_right.svg"
+                     alt="news-arrow_right"></button>
+            </div>
+         </section>
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/utils';
+@import './base/sticky-footer';
+@import './base/modal';
+@import './base/global';
+
+/* Blocks */
+@import './blocks/*.scss';
+@import 'node_modules/swiper/swiper-bundle';

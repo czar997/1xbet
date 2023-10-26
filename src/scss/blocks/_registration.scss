@@ -1,0 +1,208 @@
+.registration,
+.registration-next,
+.registration__confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 150px 15px 65px;
+  @media (max-width: 767px) {
+    padding: 75px 15px 20px;
+  }
+}
+.registration__form,
+.registration-next__form,
+.registration__confirm-inner {
+  max-width: 580px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 100px 82px;
+  border-radius: 15px;
+  @media (max-width: 767px) {
+    padding: 40px 50px 42px;
+  }
+  @media (max-width: 575px) {
+    padding: 30px 30px 32px;
+  }
+  @media (max-width: 375px) {
+    padding: 30px 15px 32px;
+  }
+}
+.registration__header,
+.registration-next__header {
+  border-radius: 50px;
+  border: 1px solid $accent;
+  padding: 16px 70px 22px 64px;
+  margin-bottom: 36px;
+  h1 {
+    font-family: $font-secondary;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+  @media (max-width: 575px) {
+    padding: 13px 15px 20px;
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+.registration__body,
+.registration-next__body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  & > label {
+    max-width: max-content;
+  }
+  & > label + * {
+    margin-top: 7px;
+  }
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']) {
+    border-radius: 5px;
+    padding: 7px 39px 9px 16px;
+    background-color: #434553;
+    width: 100%;
+  }
+  .registration-pass,
+  .registration-repeat_pass {
+    margin-top: 20px;
+  }
+
+  #error-email-message,
+  #error-pass-message,
+  #error-repeat-pass-message {
+    color: #ff613f;
+    text-align: right;
+    font-weight: 400;
+  }
+
+  input[type='submit'] {
+    border-radius: 60px;
+    background: $accent;
+    color: #000;
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px 60px;
+    margin-top: 35px;
+  }
+  @media (max-width: 575px) {
+    input[type='submit'] {
+      padding: 14px 20px;
+      font-size: 16px;
+    }
+  }
+}
+.personal-apply {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  label {
+    max-width: 22px;
+    width: 100%;
+    display: flex;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    a {
+      color: $accent;
+      text-decoration-line: underline;
+    }
+  }
+  .fake-checkbox {
+    display: inline-block;
+    max-width: 22px;
+    width: 100%;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #767b9c;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/fake-check_Icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scale(0);
+      transition: transform 0.1s ease;
+    }
+  }
+  .real-checkbox:checked + .fake-checkbox::after {
+    transform: scale(1);
+  }
+}
+
+// registr next особые св-ва
+.registration-next__header {
+  padding: 24px 35px 29px;
+  h1 {
+    font-size: 18px;
+  }
+  @media (max-width: 425px) {
+    padding: 13px 15px 20px;
+    h1 {
+      font-size: 15px;
+    }
+  }
+}
+.registration-next__body {
+  & > input:not([type='submit']):not([type='radio']):not([type='checkbox']) + label {
+    margin-top: 20px;
+  }
+}
+.registration-next__form {
+  @media (max-width: 575px) {
+    width: 100%;
+    padding: 30px 40px 32px;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+    padding: 30px 15px 32px;
+  }
+}
+// regist confirm особые св-ва
+.registration__confirm {
+  @media (max-width: 767px) {
+    align-items: stretch;
+  }
+}
+.registration__confirm-inner {
+  height: 620px;
+  .registration__body {
+    text-align: center;
+    font-weight: 400;
+    h2 {
+      color: $accent;
+      font-family: $font-secondary;
+      font-size: 25px;
+      line-height: normal;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 767px) {
+    height: unset;
+  }
+  @media (max-width: 575px) {
+    .registration__body {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}

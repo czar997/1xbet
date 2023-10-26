@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="registration">
+         <form class="registration__form" action="#!" style="background-image: url(/images/registration_back.png);">
+            <div class="registration__header">
+               <h1>Регистрация</h1>
+            </div>
+            <div class="registration__body">
+               <label for="registration-email">E-mail</label>
+               <input type="text" id="registration-email" required>
+               <div id="error-email-message"></div>
+               <label class="registration-pass" for="registration-pass">Пароль</label>
+               <div class="eye-input">
+                  <input type="password" id="registration-pass" required>
+                  <img src="/images/eye-pass_icon.svg" alt="eye-pass_icon" data-password="registration-pass">
+               </div>
+               <div id="error-pass-message"></div>
+               <label class="registration-repeat_pass" for="registration-repeat_pass">Повторите пароль</label>
+               <div class="eye-input">
+                  <input type="password" id="registration-repeat_pass">
+                  <img src="/images/eye-pass_icon.svg" alt="eye-pass_icon" data-password="registration-repeat_pass">
+               </div>
+               <div id="error-repeat-pass-message"></div>
+               <div class="personal-apply">
+                  <label>
+                     <input class="real-checkbox" type="checkbox">
+                     <span class="fake-checkbox"></span>
+                  </label>
+                  <p>Отправляя данную форму, вы принимаете условие <a href="#!">пользовательского соглашения</a></p>
+               </div>
+               <input type="submit" value="Зарегистрироваться">
+            </div>
+         </form>
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

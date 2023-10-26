@@ -1,0 +1,289 @@
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 1024px) {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 350px;
+  }
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}
+.telegram-bannner {
+  border-radius: 50px 0px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  @media (max-width: 1024px) {
+    order: -3;
+  }
+}
+.telegram-bannner__content {
+  height: 400px;
+  background-image: url(/images/telegram_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  position: relative;
+  @media (max-width: 1440px) {
+    height: 350px;
+  }
+  @media (max-width: 1200px) {
+    height: 300px;
+  }
+  @media (max-width: 1024px) {
+    height: 350px;
+  }
+  p {
+    max-width: 270px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: $font-secondary;
+    position: absolute;
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+    @media (max-width: 375px) {
+      font-size: 18px;
+    }
+  }
+}
+.telegram-bannner__content p:nth-child(1) {
+  top: 35px;
+  left: 40px;
+  @media (max-width: 1200px) {
+    left: 24px;
+  }
+  span {
+    color: $accent;
+  }
+}
+.telegram-bannner__content p:nth-child(2) {
+  max-width: 200px;
+  font-size: 21px;
+  bottom: 35px;
+  left: 40px;
+  font-weight: 500;
+  @media (max-width: 1200px) {
+    font-size: 19px;
+    left: 24px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
+}
+.telegram-btn {
+  position: absolute;
+  right: 32px;
+  bottom: 40px;
+  @media (max-width: 1200px) {
+    right: 25px;
+  }
+  @media (max-width: 375px) {
+    right: 15px;
+    bottom: 23px;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    @media (max-width: 375px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.btn-archieve {
+  width: 100%;
+  height: 60px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  @media (max-width: 1024px) {
+    grid-column: span 2;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    grid-column: unset;
+    max-width: 350px;
+  }
+}
+
+.top-matches {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  @media (max-width: 1440px) {
+    height: 350px;
+  }
+  @media (max-width: 1024px) {
+    order: -1;
+  }
+}
+
+.match-card {
+  padding: 24px 24px 0 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 17px;
+  position: relative;
+  @media (max-width: 1440px) {
+    padding: 24px 3px 0 22px;
+    gap: 15px;
+  }
+  @media (max-width: 767px) {
+    padding: 24px 3px 0 8px;
+  }
+}
+.match-card_title {
+  text-align: center;
+  font-family: $font-secondary;
+  flex-grow: 0.6;
+  h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  span {
+    color: $accent;
+    font-size: 18px;
+  }
+}
+.match-card_teams {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.match-card_teams-1,
+.match-card_teams-2 {
+  text-align: center;
+  max-width: 110px;
+  font-size: 18px;
+  font-weight: 600;
+  @media (max-width: 1200px) {
+    max-width: 100px;
+    font-size: 17px;
+  }
+}
+.match-card_teams-1__image,
+.match-card_teams-2__image {
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  @media (max-width: 1440px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media (max-width: 1200px) {
+    width: 90px;
+    height: 90px;
+  }
+  img {
+    width: 75px;
+    height: 75px;
+    @media (max-width: 1440px) {
+      width: 70px;
+      height: 70px;
+    }
+    @media (max-width: 1200px) {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
+.match-card_event {
+  color: $accent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (max-width: 1440px) {
+    bottom: 45px;
+    left: 52%;
+  }
+  @media (max-width: 1200px) {
+    bottom: 60px;
+  }
+}
+.match-card_date {
+  font-size: 28px;
+  font-weight: 700;
+  @media (max-width: 1200px) {
+    font-size: 25px;
+  }
+}
+.match-card_time {
+  font-size: 21px;
+  font-weight: 600;
+  @media (max-width: 1200px) {
+    font-size: 19px;
+  }
+}
+.sportnews {
+  height: 400px;
+  border-radius: 0px 50px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(36, 36, 45, 0) 25.31%, #13161f 86.55%);
+  }
+  @media (max-width: 1440px) {
+    height: 350px;
+    padding: 0 15px;
+  }
+  @media (max-width: 1200px) {
+    height: 300px;
+    padding: 0 23px;
+  }
+  @media (max-width: 1024px) {
+    height: 350px;
+    order: -2;
+  }
+}
+.sportnews__wrapper {
+  max-width: 350px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+.sportnews__title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+  h6 {
+    font-family: $font-secondary;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.sportnews__about {
+  margin-top: 15px;
+}

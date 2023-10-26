@@ -1,0 +1,68 @@
+[class*='__container'] {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  font-size: 13px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 575px) {
+    font-size: 11px;
+  }
+}
+
+.btn__empty {
+  border: 2px solid $accent;
+}
+
+.btn__fill {
+  font-family: $font-secondary;
+  color: #000000;
+  background-color: $accent;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 20px;
+  @media (max-width: 1440px) {
+    grid-template-columns: auto 350px;
+  }
+  @media (max-width: 1200px) {
+    grid-template-columns: auto 300px;
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+.eye-input {
+  position: relative;
+  display: block;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(134deg);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+}
+.eye-input-active::after {
+  opacity: 0;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="tariffs__container">
+         <section class="tariffs">
+            <h1>Тарифы Check Bets</h1>
+            <div class="tariffs__cards">
+               <div class="tariffs__card" style="background-image: url(/images/tariff_base-back.png);">
+                  <figure>
+                     <div class="account__partner-image"><img src="/images/account_base.svg" alt="account_base">
+                     </div>
+                     <figcaption>ТАРИФ Базовый</figcaption>
+                  </figure>
+                  <p>Бесплатный без авторизации</p>
+                  <div class="tariff__benefits">
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>Прогноз всех событий</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/cross_Icon.svg" alt="checkmark">
+                        <span>
+                           Прогноз с трендом</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/cross_Icon.svg" alt="checkmark">
+                        <span>Прогноз с уникальной точностью</span>
+                     </div>
+                  </div>
+                  <button class="btn btn__fill tariff__benefits-btn default-tarr">Активирован</button>
+               </div>
+               <div class="tariffs__card" style="background-image: url(/images/tariff_partner-back.png);">
+                  <figure>
+                     <div class="account__partner-image"><img src="/images/account_partner.svg" alt="account_base">
+                     </div>
+                     <figcaption>ТАРИФ Партнерский</figcaption>
+                  </figure>
+                  <p>Ставь на бк вместе с нами!</p>
+                  <div class="tariff__benefits">
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>Прогноз всех событий</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>
+                           Прогноз с трендом</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/cross_Icon.svg" alt="checkmark">
+                        <span>Прогноз с уникальной точностью</span>
+                     </div>
+                  </div>
+                  <button class="btn btn__fill tariff__benefits-btn ">Подключить</button>
+               </div>
+               <div class="tariffs__card" style="background-image: url(/images/tariff_premium-back.png);">
+                  <figure>
+                     <div class="account__partner-image"><img class="prem-img" src="/images/account_premium.svg"
+                           alt="account_base">
+                     </div>
+                     <figcaption>ТАРИФ премиум</figcaption>
+                  </figure>
+                  <div class="account__premium-choose">
+                     <label>
+                        <input type="radio" name="premium__choose" class="real__radio" checked>
+                        <span class="fake__radio"></span>
+                        <span><strong>499 ₽</strong> на один день</span>
+                     </label>
+                     <label>
+                        <input type="radio" name="premium__choose" class="real__radio">
+                        <span class="fake__radio"></span>
+                        <span style="display: block;">
+                           <strong><del>14 970</del></strong> <strong style="color:#00D42F">13
+                              000 ₽</strong> на
+                           месяц
+                        </span>
+                     </label>
+                  </div>
+                  <div class="tariff__benefits">
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>Прогноз всех событий</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>
+                           Прогноз с трендом</span>
+                     </div>
+                     <div class="tariff__benefits-item">
+                        <img src="/images/checkmark_Icon.svg" alt="checkmark">
+                        <span>Прогноз с уникальной точностью</span>
+                     </div>
+                  </div>
+                  <button class="btn btn__fill tariff__benefits-btn ">Купить</button>
+               </div>
+            </div>
+            <div class="tariffs__about">
+               <ul class="tariffs__about-list">
+                  <li class="tariffs_about-item">
+                     <h2>Тариф базовый</h2>
+                     <span>Активен без авторизации на сайтe.</span>
+                     <p>Данный тариф доступен каждому посетителю сайта. Он позволяет получить доступ к показателям всех
+                        спортивных матчей (гол, угловой, фол и т.д.), обработанным первой ступенью нашего алгоритма. Так
+                        же в тариф входит доступ в наш <a href="#!">Telegram</a> канал, где публикуются лучшие события
+                        дня.</p>
+                  </li>
+                  <li class="tariffs_about-item">
+                     <h2>Тариф партнерский</h2>
+                     <span>Активен при регистрации в партнерской нашему проекту букмекерской конторе.</span>
+                     <p>С этим тарифом вы получаете доступ к стандартным показателям спортивного матча, рассчитанных
+                        первой ступенью алгоритма (гол, угловой, фол и т.д.). А также дополнительная опция для тех, кто
+                        хочет ознакомиться с показателями ожидаемых голов и их тренда. Это показатели, обработанные
+                        второй ступенью алгоритма. Благодаря этой функции можно отслеживать тенденцию показателя голов
+                        команды.</p>
+                  </li>
+                  <li class="tariffs_about-item">
+                     <h2>Тариф премиум</h2>
+                     <span>Платный тариф, для оплаты необходима авторизация на сайте.</span>
+                     <p>Тариф Премиум предназначен для серьезных ставок на спорт. Приобретая его, пользователь получает
+                        доступ к третьей ступени обработки данных алгоритмом, которая отсеивает более 80% матчей. И лишь
+                        в оставшихся выдает показатели команд, которые дают небольшой, но стабильный плюс.
+                     </p>
+                     <p> Подписку можно оформить на один день или на более продолжительный период – на месяц. Стоимость
+                        дневной подписки 499 рублей. Для того, чтобы увеличить свои шансы на победу, можно приобрести
+                        месячный абонемент за 13000 рублей.</p>
+                  </li>
+               </ul>
+               <div class="tariffs__advantages">
+                  <p>С этим тарифом вы приобретаете:</p>
+                  <div class="tariffs__advantages-items">
+                     <div class="tariffs__advantages-item">
+                        <img src="/images/bulleye.svg" alt="bulleye">
+                        <span>Прогноз с уникальной точностью</span>
+                     </div>
+                     <div class="tariffs__advantages-item">
+                        <img src="/images/tg_icon.svg" alt="tg_icon">
+                        <span>Доступ к премиум каналу в <a href="#!">Telegram</a></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

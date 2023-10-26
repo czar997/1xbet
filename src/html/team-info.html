@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="main__container team-info-container">
+         <section class="team-info">
+            <div class="team-info__inner" style="background-image: url(/images/league-slug_back.png),
+             linear-gradient(to bottom, #27282e 10%, #27282e 100%);">
+               <div class="team-info__header">
+                  <div class="team-info__header-image"><img src="/images/norway.png" alt="norway"></div>
+                  <div class="team-info__header-info">
+                     <span class="team-info__name">Мьёндален</span>
+                     <span class="team-info__league">Норвегия: ОБОС-Лига</span>
+                  </div>
+               </div>
+               <div class="team-info__tabs">
+                  <div class="team-info__tabs_items teamtab-items">
+                     <span class="teamtab-item teamtab-item-active">Матчи</span>
+                     <span class="teamtab-item ">О команде</span>
+                     <span class="teamtab-item ">Статистика</span>
+                  </div>
+               </div>
+
+               <div class="team-info__schedule">
+                  <div class="team-info__schedule-present present-matches">
+                     <div class="present-matches__item">
+                        <span class="present-matches__item-date">16.08.2023</span>
+                        <div class="prediction__match">
+                           <div class="time-img">
+                              <img src="/images/monobrow.svg" alt="monobrow">
+                              <span>18:00</span>
+                           </div>
+                           <div class="prediction__match-date">18:00</div>
+                           <div class="prediction__match-event event">
+                              <div class="event-team1">
+                                 <div class="team-logo left">
+                                    <span class="event-team1_name">Хака</span>
+                                    <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                                 </div>
+                                 <div class="event-team1_logo-coef">
+                                    <span class="team1-coef">0.75</span>
+                                 </div>
+                              </div>
+                              <div class="event-team2">
+                                 <div class="event-team2_logo-coef">
+                                    <span class="team2-coef">1.51</span>
+                                 </div>
+                                 <div class="team-logo right">
+                                    <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                                    <span class="event-team2_name">Мариехамн</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="past-matches-title">Прошедшие матчи</p>
+                  <div class="team-info__schedule-past past-matches">
+                     <div class="past-matches__item">
+                        <span class="past-matches__item-date">16.08.2023</span>
+                        <div class="prediction__match">
+                           <div class="time-img">
+                              <img src="/images/monobrow.svg" alt="monobrow">
+                              <span>18:00</span>
+                           </div>
+                           <div class="prediction__match-date">18:00</div>
+                           <div class="prediction__match-event event">
+                              <div class="event-team1">
+                                 <div class="team-logo left">
+                                    <span class="event-team1_name">Хака</span>
+                                    <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                                 </div>
+                                 <div class="event-team1_logo-coef">
+                                    <span class="team1-coef">0.75</span>
+                                 </div>
+                              </div>
+                              <div class="event-team2">
+                                 <div class="event-team2_logo-coef">
+                                    <span class="team2-coef">1.51</span>
+                                 </div>
+                                 <div class="team-logo right">
+                                    <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                                    <span class="event-team2_name">Мариехамн</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="past-matches__item">
+                        <span class="past-matches__item-date">16.08.2023</span>
+                        <div class="prediction__match">
+                           <div class="time-img">
+                              <img src="/images/monobrow.svg" alt="monobrow">
+                              <span>18:00</span>
+                           </div>
+                           <div class="prediction__match-date">18:00</div>
+                           <div class="prediction__match-event event">
+                              <div class="event-team1">
+                                 <div class="team-logo left">
+                                    <span class="event-team1_name">Хака</span>
+                                    <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                                 </div>
+                                 <div class="event-team1_logo-coef">
+                                    <span class="team1-coef">0.75</span>
+                                 </div>
+                              </div>
+                              <div class="event-team2">
+                                 <div class="event-team2_logo-coef">
+                                    <span class="team2-coef">1.51</span>
+                                 </div>
+                                 <div class="team-logo right">
+                                    <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                                    <span class="event-team2_name">Мариехамн</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="past-matches__item">
+                        <span class="past-matches__item-date">16.08.2023</span>
+                        <div class="prediction__match">
+                           <div class="time-img">
+                              <img src="/images/monobrow.svg" alt="monobrow">
+                              <span>18:00</span>
+                           </div>
+                           <div class="prediction__match-date">18:00</div>
+                           <div class="prediction__match-event event">
+                              <div class="event-team1">
+                                 <div class="team-logo left">
+                                    <span class="event-team1_name">Хака</span>
+                                    <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                                 </div>
+                                 <div class="event-team1_logo-coef">
+                                    <span class="team1-coef">0.75</span>
+                                 </div>
+                              </div>
+                              <div class="event-team2">
+                                 <div class="event-team2_logo-coef">
+                                    <span class="team2-coef">1.51</span>
+                                 </div>
+                                 <div class="team-logo right">
+                                    <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                                    <span class="event-team2_name">Мариехамн</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         @@include('aside.html')
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

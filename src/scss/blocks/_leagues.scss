@@ -1,0 +1,128 @@
+.leagues-container {
+  padding: 150px 15px 80px;
+  @media (max-width: 767px) {
+    padding: 75px 15px 0;
+  }
+}
+.leagues {
+  border-radius: 5px;
+  background: #27282e;
+  padding: 30px 27px 55px;
+  @media (max-width: 767px) {
+    padding: 20px 15px 35px;
+  }
+}
+.leagues__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media (max-width: 767px) {
+    gap: 20px;
+  }
+}
+.leagues__division {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  @media (max-width: 767px) {
+    gap: 20px;
+  }
+}
+.leagues__division-title {
+  font-family: $font-secondary;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+  @media (max-width: 375px) {
+    align-items: baseline;
+  }
+  .leagues-checkbox {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 375px) {
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 12px;
+    }
+  }
+}
+.checkbox-switch {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #818496;
+  position: relative;
+  cursor: pointer;
+  order: 2;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 49%;
+    left: 3px;
+    transform: translateY(-49%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #818496;
+    transition: all 0.5s ease;
+  }
+  &.active {
+    background-color: #199826;
+    border: 1px solid #fff;
+    &::after {
+      background-color: #fff;
+      left: 28px;
+    }
+  }
+}
+.leagues__division-inner {
+  padding: 15px 0;
+  border-bottom: 1px solid #715d40;
+  border-top: 1px solid #715d40;
+  display: grid;
+  gap: 15px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  @media (max-width: 767px) {
+    gap: 15px 25px;
+  }
+}
+.division-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #3d372e;
+}
+.division-item__left {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.division-item__image {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+.division-item__info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.division-item__country {
+  color: $accent;
+}

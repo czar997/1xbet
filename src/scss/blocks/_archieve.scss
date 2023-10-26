@@ -1,0 +1,76 @@
+.archive-container {
+  padding: 120px 15px 100px;
+  @media (max-width: 767px) {
+    padding: 75px 15px 0;
+  }
+}
+.archive {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.archieve__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 25px 15px;
+  h1 {
+    font-family: $font-secondary;
+    font-size: 30px;
+    line-height: 1.16;
+    @media (max-width: 575px) {
+      font-size: 20px;
+    }
+  }
+  .prediction__block {
+    background: transparent;
+    padding: 22px 0;
+  }
+}
+.archieve__inner-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px 13px 40px;
+  border-radius: 50px;
+  border: 1px solid #ffd28e;
+  max-width: 600px;
+  @media (max-width: 768px) {
+    max-width: 500px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  input[type='date'] {
+    background-image: url(/images/archieve_calendar.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 95%;
+    flex-shrink: 0;
+    &::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      opacity: 0;
+      padding-left: 12px;
+    }
+  }
+}
+.archieve__inner-btn {
+  max-width: 277px;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-family: $font-secondary;
+  font-size: 18px;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    max-width: 200px;
+    font-size: 15px;
+  }
+  @media (max-width: 575px) {
+    height: 40px;
+    font-size: 13px;
+  }
+}

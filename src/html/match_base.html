@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Чекбетс</title>
+   <link rel="preload" href="./images/background_main.png" as="image">
+   <!-- custom css -->
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   @@include('header.html')
+   <main class="main">
+      <div class="main__container match-container">
+         <section class="match">
+            <div class="match__info" style="background-image: url(/images/match_info-back.jpg);">
+               <h1>Матч между Самтредиа и Торпедо Кутаиси</h1>
+               <div class="match__info-teams">
+                  <div class="match__info-team1 match__team1">
+                     <div class="match__team1-image">
+                        <img src="/images/team_img1.png" alt="team-img1">
+                     </div>
+                     <div class="match__team1-name">
+                        Самтредиа
+                     </div>
+                     <div class="match__team1-location">
+                        Грузия: Лига Эровнули
+                     </div>
+                     <!-- <span class="favourite-icon1"><img src="/images/star.svg" alt="star"></span> -->
+                     <span class="favourite-icon1"><svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1.13938 7.61109C0.868419 7.36051 1.01561 6.90752 1.3821 6.86406L6.57516 6.24811C6.72453 6.2304 6.85427 6.1366 6.91727 6.00002L9.10763 1.25138C9.26221 0.91625 9.73864 0.916185 9.89322 1.25132L12.0836 5.99991C12.1466 6.1365 12.2755 6.23055 12.4249 6.24826L17.6182 6.86406C17.9847 6.90752 18.1315 7.36064 17.8605 7.61122L14.0216 11.162C13.9111 11.2641 13.862 11.4161 13.8913 11.5637L14.9101 16.6928C14.9821 17.0548 14.5968 17.3353 14.2748 17.155L9.71163 14.6001C9.58038 14.5266 9.42092 14.527 9.28967 14.6004L4.72606 17.1544C4.40402 17.3346 4.01806 17.0548 4.08999 16.6928L5.109 11.564C5.13831 11.4165 5.08927 11.2641 4.97884 11.162L1.13938 7.61109Z"
+                              stroke="#696D83" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </span>
+                  </div>
+                  <div class="match__info_score-time">
+                     <div class="match__info-score score">
+                        <span class="score-team1">
+                           2
+                        </span>
+                        <span class="sign-column">&colon;</span>
+                        <span class="score-team2">
+                           -
+                        </span>
+                     </div>
+                     <div class="match__info-event">
+                        <span class="event-date">14 августа</span>
+                        <span class="event-time">16:00</span>
+                     </div>
+                  </div>
+                  <div class="match__info-team2 match__team2">
+                     <div class="match__team2-image">
+                        <img src="/images/team_img2.png" alt="team-img2">
+                     </div>
+                     <div class="match__team2-name">
+                        Самтредиа
+                     </div>
+                     <div class="match__team2-location">
+                        Грузия: Лига Эровнули
+                     </div>
+                     <span class="favourite-icon2"><svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1.13938 7.61109C0.868419 7.36051 1.01561 6.90752 1.3821 6.86406L6.57516 6.24811C6.72453 6.2304 6.85427 6.1366 6.91727 6.00002L9.10763 1.25138C9.26221 0.91625 9.73864 0.916185 9.89322 1.25132L12.0836 5.99991C12.1466 6.1365 12.2755 6.23055 12.4249 6.24826L17.6182 6.86406C17.9847 6.90752 18.1315 7.36064 17.8605 7.61122L14.0216 11.162C13.9111 11.2641 13.862 11.4161 13.8913 11.5637L14.9101 16.6928C14.9821 17.0548 14.5968 17.3353 14.2748 17.155L9.71163 14.6001C9.58038 14.5266 9.42092 14.527 9.28967 14.6004L4.72606 17.1544C4.40402 17.3346 4.01806 17.0548 4.08999 16.6928L5.109 11.564C5.13831 11.4165 5.08927 11.2641 4.97884 11.162L1.13938 7.61109Z"
+                              stroke="#696D83" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
+                  </div>
+               </div>
+            </div>
+            <div class="match__stats">
+               <div class="acctariff">
+                  <div class="acctariff__item accbasic acctariff__item-basic" data-tab="basic">
+                     <div class="acctariff__item-image acctariff__item-image-active"><img src="/images/soccer.svg"
+                           alt="soccer"></div>
+                     <span>Базовый тариф</span>
+                  </div>
+                  <div class="acctariff__item accpartner " data-tab="partner">
+                     <div class="acctariff__item-image"><img src="/images/smile.svg" alt="smile"></div>
+                     <span>Партнерский тариф</span>
+                  </div>
+                  <div class="acctariff__item accpremium" data-tab="premium">
+                     <div class="acctariff__item-image"><img src="/images/crown.svg" alt="crown"></div>
+                     <span>Премиум тариф</span>
+                  </div>
+               </div>
+               <div class="halves">
+                  <div class="halves__game-half">
+                     <span class="half half-active">Матч</span>
+                     <span class="half ">1-й тайм</span>
+                     <span class="half ">2-й тайм</span>
+                  </div>
+                  <div class="halves__results">
+                     <img src="/images/calendar.svg" alt="calendar">
+                     <span>Результаты</span>
+                  </div>
+               </div>
+               <div class="tariff-on base-tarif active-tab" id="basic">
+                  <div class="indicator">
+                     <span>Показатели</span>
+                     <div class="indicator__teams">
+                        <div class="indicator__team1">
+                           <img src="/images/team_img1.png" alt="team_img1">
+                        </div>
+                        <span>Тотал</span>
+                        <div class="indicator__team2">
+                           <img src="/images/team_img2.png" alt="team_img2">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="statistic">
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/goals.svg" alt="Голы">
+                           <span>Голы</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr goals"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr goals"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/corners.svg" alt="Угловые">
+                           <span>Угловые</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr corners"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr corners"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/shots-on-goal.svg" alt="Удары в створ">
+                           <span>Удары в створ</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr shots-on-goal"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr shots-on-goal"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/shots-miss.svg" alt="Удары мимо">
+                           <span>Удары мимо</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr shots-miss"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr shots-miss"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/offsides.svg" alt="Офсайды">
+                           <span>Офсайды</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr offsides"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr offsides"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/fauls.svg" alt="Фолы">
+                           <span>Фолы</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr fauls"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr fauls"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="statistic__item">
+                        <div class="statistic__item-left">
+                           <img src="/images/yellow-cards.svg" alt="Желтые карточки">
+                           <span>Желтые карточки</span>
+                        </div>
+                        <div class="statistic__item-right">
+                           <div class="team1-num">
+                              <span>1.93</span>
+                              <div class="team1-metr yellow-cards"></div>
+                           </div>
+                           <div class="total-num">
+                              3.54
+                           </div>
+                           <div class="team2-num">
+                              <span>1.61</span>
+                              <div class="team2-metr yellow-cards"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="best-indicator">
+                     <span>Лучшие показатели</span>
+                     <div class="teams-circle">
+                        <div class="team1-circle"></div>
+                        <div class="team2-circle"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tariff-on partner-tarif" id="partner">
+                  <div class="partner-tarif__grid tariff-grid">
+                     <div class="tariff-grid__header">
+                        <div class="show-title">Показатели</div>
+                        <div class="stable-title">Стабилизатор</div>
+                        <div class="trend-title">Трендовый <br>показатель</div>
+                        <div class="anchor-title">Якорный <br>показатель</div>
+                        <div class="individual-title">Индивидуальный <br>тотал</div>
+                     </div>
+                     <div class="tariff-grid__body ">
+                        <div class="index-team1">
+                           <div class="indicator__team1">
+                              <img src="/images/team_img1.png" alt="team_img1">
+                           </div>
+                           <span class="index-show">1.42</span>
+                           <img class="index-arrows" src="/images/short-arrow.svg" alt="short-arrow">
+                           <span class="index-stable">1.90</span>
+                           <picture>
+                              <source media="(max-width: 700px)" srcset="/images/short-arrow.svg">
+                              <img class="index-arrows long" src="/images/long-arrow.svg" alt="long-arrow">
+                           </picture>
+                           <span class="index-trend">2.34</span>
+                           <span class="index-anchor">1.33</span>
+                           <span class="index-individual">0.5Б</span>
+                        </div>
+                        <div class="index-team2">
+                           <div class="indicator__team2">
+                              <img src="/images/team_img2.png" alt="team_img2">
+                           </div>
+                           <span class="index-show">1.42</span>
+                           <img class="index-arrows" src="/images/short-arrow.svg" alt="short-arrow">
+                           <span class="index-stable">1.90</span>
+                           <picture>
+                              <source media="(max-width: 700px)" srcset="/images/short-arrow.svg">
+                              <img class="index-arrows long" src="/images/long-arrow.svg" alt="long-arrow">
+                           </picture>
+                           <span class="index-trend">2.34</span>
+                           <span class="index-anchor">1.33</span>
+                           <span class="index-individual">0.5Б</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tariff-on premium-tarif" id="premium">
+                  <div class="premium-tarif__grid tariff-grid">
+                     <div class="tariff-grid__header">
+                        <div class="show-title">Показатели</div>
+                        <div class="stable-title">Стабилизатор</div>
+                        <div class="trend-title">Трендовый <br>показатель</div>
+                        <div class="anchor-title">Якорный <br>показатель</div>
+                        <div class="individual-title">Индивидуальный <br>тотал</div>
+                     </div>
+                     <div class="tariff-grid__body">
+                        <div class="index-team1">
+                           <div class="indicator__team1">
+                              <img src="/images/team_img1.png" alt="team_img1">
+                           </div>
+                           <span class="index-show">6.66</span>
+                           <img class="index-arrows" src="/images/short-arrow.svg" alt="short-arrow">
+                           <span class="index-stable">1.66</span>
+                           <picture>
+                              <source media="(max-width: 700px)" srcset="/images/short-arrow.svg">
+                              <img class="index-arrows long" src="/images/long-arrow.svg" alt="long-arrow">
+                           </picture>
+                           <span class="index-trend">2.66</span>
+                           <span class="index-anchor">1.66</span>
+                           <span class="index-individual">0.6Б</span>
+                        </div>
+                        <div class="index-team2">
+                           <div class="indicator__team2">
+                              <img src="/images/team_img2.png" alt="team_img2">
+                           </div>
+                           <span class="index-show">1.42</span>
+                           <img class="index-arrows" src="/images/short-arrow.svg" alt="short-arrow">
+                           <span class="index-stable">1.90</span>
+                           <picture>
+                              <source media="(max-width: 700px)" srcset="/images/short-arrow.svg">
+                              <img class="index-arrows long" src="/images/long-arrow.svg" alt="long-arrow">
+                           </picture>
+                           <span class="index-trend">2.34</span>
+                           <span class="index-anchor">1.33</span>
+                           <span class="index-individual">0.5Б</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         @@include('aside.html')
+      </div>
+   </main>
+   @@include('footer.html')
+   <script src="./js/index.bundle.js">
+   </script>
+</body>
+
+</html>

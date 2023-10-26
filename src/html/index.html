@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чекбетс</title>
+  <link rel="preload" href="./images/background_main.png" as="image">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  @@include('header.html')
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <section class="banner-slide banner" style="background-image: url(/images/banner.jpg);">
+        <div class="banner__container">
+          <div class="banner__about">
+            <h1><span>Уникальная</span> платформа</h1>
+            <p>для анализа <img src="/images/ball.png" alt="ball"> футбольных
+              и <img src="/images/puck.png" alt="puck"> хоккейных матчей</p>
+          </div>
+          <div class="banner__about-sub">
+            <button class="btn btn__fill">Получить Премиум тариф</button>
+            <span>бесплатно до 1 сентября</span>
+          </div>
+        </div>
+      </section>
+      <section class="banner-slide banner" style="background-image: url(/images/banner2.jpg);">
+        <div class="banner__container">
+          <div class="banner__about slide_2">
+            <h1><span>Партнерский</span> тариф</h1>
+            <p>двигайтесь <img src="/images/ball.png" alt="ball"> с трендами!</p>
+            <div class="slide_2__exclusive">
+              <p>Эксклюзивно от нашего партнера</p>
+              <p>Глубокий анализ с учетом уникальных научных методик</p>
+              <p>Улучшайте свою стратегию ставок с учетом трендов</p>
+            </div>
+          </div>
+          <div class="banner__about-sub">
+            <button class="btn btn__fill">Получить Премиум тариф</button>
+            <span>бесплатно до 1 сентября</span>
+          </div>
+        </div>
+      </section>
+      <section class="banner-slide banner" style="background-image: url(/images/banner3.jpg);">
+        <div class="banner__container">
+          <div class="banner__about slide_3">
+            <h1><span>Премиум</span> тариф</h1>
+            <p>аналитика на <img src="/images/ball.png" alt="ball"> максимуме!</p>
+            <div class="slide_3__exclusive">
+              <p>Для истинных профессионалов ставок</p>
+              <p>Стабилизирующий и якорный показатели в вашем распоряжении</p>
+              <p>Отсеиваем 80% рискованных ставок — проходимость более 92%</p>
+              <p>Больше ставок, чем в партнерском тарифе</p>
+            </div>
+          </div>
+          <div class="banner__about-sub">
+            <button class="btn btn__fill">Получить Премиум тариф</button>
+            <span>бесплатно до 1 сентября</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <main class="main">
+    <div class="mini-banner__container">
+      <div class="sub-banner ">
+        <div class="left_wrapper">
+          <p class="how-it-works">Как это работает?</p>
+          <p class="how-it-works-info">Узнай о системе прогнозирования и алгоритмах расчета исхода матчей,
+            разработанных
+            нашей командой </p>
+          <div class="sub-banner__left"></div>
+        </div>
+        <div class="sub-banner__right">
+          <button><img src="/images/banner_arrow-right.svg" alt="banner_arrow-right"></button>
+        </div>
+      </div>
+    </div>
+    <div class="main__container home-page">
+      <div class="sections">
+        <section class="predictions">
+          <div class="predictions__wrapper">
+            <div class="prediction__block">
+              <h4>Прогнозы на Сегодня</h4>
+              <div class="prediction__window">
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Хака</span>
+                        <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.75</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.51</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Мариехамн</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">ЯаПС</span>
+                        <img src="/images/team_logo1.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.55</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">0.47</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo2.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Гнистан</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Уотерфорд Юнайтед</span>
+                        <img src="/images/team_logo3.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">2.05</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.17</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo4.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Шемрок Роверс</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Спорт Уанкайо</span>
+                        <img src="/images/team_logo5.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.45</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.83</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo6.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Сент-Патрикс Атлетик</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="prediction__block">
+              <h4>Прогнозы на завтра</h4>
+              <div class="prediction__window">
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Хака</span>
+                        <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.75</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.51</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Мариехамн</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class=" team-logo left">
+                        <span class="event-team1_name">ЯаПС</span>
+                        <img src="/images/team_logo1.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.55</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">0.47</span>
+                      </div>
+                      <div class=" team-logo right">
+                        <img src="/images/team_logo2.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Гнистан</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Уотерфорд Юнайтед</span>
+                        <img src="/images/team_logo3.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">2.05</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.17</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo4.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Шемрок Роверс</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Спорт Уанкайо</span>
+                        <img src="/images/team_logo5.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.45</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.83</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo6.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Сент-Патрикс Атлетик</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="prediction__block">
+              <h4>Прогнозы на 16.08.2023</h4>
+              <div class="prediction__window">
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Хака</span>
+                        <img src="/images/team_logo7.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.75</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.51</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo8.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Мариехамн</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">18:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">ЯаПС</span>
+                        <img src="/images/team_logo1.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.55</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">0.47</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo2.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Гнистан</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:00</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Уотерфорд Юнайтед</span>
+                        <img src="/images/team_logo3.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">2.05</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.17</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo4.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Шемрок Роверс</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prediction__match">
+                  <div class="time-img">
+                    <img src="/images/monobrow.svg" alt="monobrow">
+                    <span>18:00</span>
+                  </div>
+                  <div class="prediction__match-date">21:30</div>
+                  <div class="prediction__match-event event">
+                    <div class="event-team1">
+                      <div class="team-logo left">
+                        <span class="event-team1_name">Спорт Уанкайо</span>
+                        <img src="/images/team_logo5.png" alt="team1-logo" width="46" height="46">
+                      </div>
+                      <div class="event-team1_logo-coef">
+                        <span class="team1-coef">0.45</span>
+                      </div>
+                    </div>
+                    <div class="event-team2">
+                      <div class="event-team2_logo-coef">
+                        <span class="team2-coef">1.83</span>
+                      </div>
+                      <div class="team-logo right">
+                        <img src="/images/team_logo6.png" alt="team2-logo" width="46" height="46">
+                        <span class="event-team2_name">Сент-Патрикс Атлетик</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="checkbets-about" style="background-image: url(/images/chekbets-about_back.jpg);">
+          <h2>Check-bets <br>ЭТО:</h2>
+          <div class="checkbets-about__item about-item">
+            <div class="about-item__image" style="background-image: url(/images/about_icon-back1.png);">
+              <img src="/images/about_icon1.svg" alt="фигура1">
+            </div>
+            <p>Прогнозы в виде ожидаемых показателей команд</p>
+          </div>
+          <img class="plus-image" src="/images/plus_sign.svg" alt="знак_плюс">
+          <div class="checkbets-about__item about-item">
+            <div class="about-item__image" style="background-image: url(/images/about_icon-back2.png);">
+              <img src="/images/about_icon2.svg" alt="фигура2">
+            </div>
+            <p>Собственная уникальная методика расчета</p>
+          </div>
+          <img class="plus-image" src="/images/plus_sign.svg" alt="знак_плюс">
+          <div class="checkbets-about__item about-item">
+            <div class="about-item__image" style="background-image: url(/images/about_icon-back3.png);">
+              <img src="/images/about_icon3.svg" alt="фигура3">
+            </div>
+            <p>Доступные тарифы для получения прогнозов</p>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__wrapper">
+            <div class="about__item project">
+              <div class="project-content ">
+                <h3>О проекте</h3>
+                <div class="project-info">
+                  <p class="project-paragraph_first">Check Bets – это уникальный проект для качественных прогнозов
+                    спортивных матчей, разработанный командой
+                    аналитиков и IT-специалистов.</p>
+                  <div class="project-info__window">
+                    <p>Высокая проходимость наших прогнозов осуществляется за счет инновационного алгоритма, который
+                      обрабатывает статистику предыдущих игр футбольных и хоккейных команд.</p>
+                    <img src="/images/project_window.png" alt="project_window">
+                  </div>
+                  <p>Суть нашей работы в том, чтобы упростить вам выбор прогноза и ожидания от возможных показателей
+                    команд.
+                    Ежедневный доступ к прогнозам для всех топовых футбольных чемпионатов и НХЛ</p>
+                </div>
+              </div>
+            </div>
+            <div class="about__item tariffs">
+              <div class="tariffs-content">
+                <h3>Тарифы</h3>
+                <div class="tariffs-info">
+                  <p>Теперь мы убедились, что нам по пути, поэтому продолжим практично
+                    раскрывать функционал. Благодаря сложной вычислительной системе алгоритм не имеет аналогов на рынке.
+                    Вы получаете инновационный прогноз на самые значимые события в ближайшем матче, на основе предыдущих
+                    игр. Далее предлагаем ознакомиться с тремя стадиями обработки данных, которые мы распределили по
+                    тарифам:</p>
+                  <div class="tariffs__items">
+                    <div class="tariff__item">
+                      <img src="/images/tariff_icon1.svg" alt="tariff_icon1">
+                      <span>Базовый тариф</span>
+                    </div>
+                    <div class="tariff__item">
+                      <img src="/images/tariff_icon3.svg" alt="tariff_icon3">
+                      <span>Партнерский тариф</span>
+                    </div>
+                    <div class="tariff__item">
+                      <img src="/images/tariff_icon2.svg" alt="tariff_icon2">
+                      <span>Премиум тариф</span>
+                    </div>
+                  </div>
+                  <p>Созданный нашими специалистами алгоритм анализирует статистические показатели предыдущих матчей
+                    команд, используя математические конструкции и теорию вероятности.</p>
+                  <button class="btn btn__empty tariff-btn"><span>КАК ЭТО РАБОТАЕТ?</span><img
+                      src="/images/tariff_arrow-right.svg" alt="tariff_arrow-right"></button>
+                </div>
+              </div>
+            </div>
+            <div class="about__item our-predictions" style="background-image: url(/images/our-predictions_back.jpg);">
+              <div class="our-predictions-content">
+                <h3>Наши прогнозы это:</h3>
+                <div class="our-predictions__items">
+                  <div class="our-predictions__item">
+                    <img src="/images/our-predictions_icon1.svg" alt="календарь">
+                    <p>Подробная информация об ожидаемых показателях команд (пр. угловые, голы и т.д.)</p>
+                  </div>
+                  <div class="our-predictions__item">
+                    <img src="/images/our-predictions_icon2.svg" alt="корень">
+                    <p>Показатели, обработанные алгоритмом к ближайшему матчу для конкретных команд</p>
+                  </div>
+                  <div class="our-predictions__item">
+                    <img src="/images/our-predictions_icon3.svg" alt="кубок">
+                    <p>Текущие варианты развития событий, которые можно ожидать от команд в выбранном матче</p>
+                  </div>
+                  <div class="our-predictions__item">
+                    <img src="/images/our-predictions_icon4.svg" alt="корона">
+                    <p>Новейший уникальный алгоритм, которого больше нигде нет!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__item bottom">
+              Check Bets – надежная система прогнозов для начинающего игрока и профессионала.
+            </div>
+          </div>
+        </section>
+      </div>
+      @@include('aside.html')
+    </div>
+  </main>
+  @@include('footer.html')
+  <script src="./js/index.bundle.js">
+  </script>
+</body>
+
+</html>
